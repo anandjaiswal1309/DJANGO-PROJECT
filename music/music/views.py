@@ -2,7 +2,7 @@ from django.shortcuts import render
 from musicbeats.models import Song,Watchlater
 from django.db.models import Case, When
 
-# Hi
+#Hi
 def index(request):
     song = Song.objects.all()[0:3]
     if request.user.is_authenticated:
